@@ -1,3 +1,5 @@
+// time complexity -> O(n^2)
+// space complexity -> O(n)
 class Solution {
     // brute force method
     public int[] twoSum(int[] nums, int target) {
