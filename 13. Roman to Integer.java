@@ -53,7 +53,7 @@ class Solution {
             // else add the currVal to result
             res += (currVal < nextVal) ? -currVal : currVal;
 
-            // srt the nextVal to currVal to remember in next iteration
+            // store the nextVal to currVal to remember in next iteration
             nextVal = currVal;
         }
         return res;
