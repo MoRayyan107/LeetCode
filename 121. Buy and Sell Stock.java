@@ -6,11 +6,15 @@ class Solution {
         int profit = 0;
 
         for (int i = 0; i < prices.length; i++){
+            // check for min val
             if (prices[i] < minVal)
                 minVal = prices[i];
-            else if((prices[i] - minVal) > profit)
+
+            // check any profit made
+            if((prices[i] - minVal) > profit)
                 profit = prices[i] - minVal;
         }
+        
         return profit;
     }
 }
