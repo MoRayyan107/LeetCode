@@ -17,6 +17,15 @@ class Solution {
         // curr -> points at the Current head Node
         // next -> points to the next value of head
 
+        // base case if its an empty list 
+        if (head == null)
+            return null;
+
+        // another base case if there is only one element in the list 
+        // just return its head
+        if (head.next == null)
+            return head;
+
         ListNode prevNode = null;
         ListNode nextNode = null;
         ListNode currNode = head;
