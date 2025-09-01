@@ -1,0 +1,24 @@
+// time complexity -> O(n), Space Complexity -> O(1)
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        // convert the string by stripping spaces and  non-alphanumeric characters
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+        // edge case if length is 1 or 0
+        if (s.length() <= 1)
+            return true;
+
+        int left = 0;
+        int right = s.length() - 1;
+
+        while (left < right){
+            if (s.charAt(left) != s.charAt(right)) return false;
+            
+            left++;
+            right--;    
+        }
+
+        return true;
+    }
+}
